@@ -1,3 +1,5 @@
+#10204 박준하
+
 import _utf8
 _utf8.main()
 
@@ -110,9 +112,9 @@ def 게임시작():
         count+=1
 
         if csy == uy and ux != csy:
-            print('같은y인듯 하다!')
+            print('같은 y인듯 하다!')
         elif ux == csx and csy != uy:
-            print('같은x인듯 하다!')
+            print('같은 x인듯 하다!')
 
         컴퓨터보드판(c_board)
         print('\n')
