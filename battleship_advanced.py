@@ -112,9 +112,9 @@ def 게임시작():
         count+=1
 
         if csy == uy and ux != csy:
-            print('같은 y인듯 하다!')
+            print('같은 y좌표에 있는 것 같다!')
         elif ux == csx and csy != uy:
-            print('같은 x인듯 하다!')
+            print('같은 x좌표에 있는 것 같다!')
 
         컴퓨터보드판(c_board)
         print('\n')

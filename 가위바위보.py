@@ -17,19 +17,25 @@ def is_playing_stop():
 def who_win():
     eq = me - com
     if eq == 0:
-        print ('No Win')
+        print ('무승부')
     elif eq == 1 or eq == -2:
-        print ('You Lose')
+        print ('패배')
     elif eq == -1 or eq == 2:
-        print ('Win')
+        print ('승리')
 
 while True:
     print('바위=1 가위=2 보=3')
     me = (int(input("어떤것을 내시겠습니까? ")))
     com = random.randint(1,3)
+    if com == 1:
+        print('상대방은 바위를 냈다')
+    elif com ==2:
+        print('상대방은 가위를 냈다')
+    else:
+        print('상대방은 보자기를 냈다')
     print(com)
     who_win()
-    stop_okay = is_playing_stop()       \안녕
+    stop_okay = is_playing_stop()       #안녕
     if stop_okay:
         break
     print('\n')
